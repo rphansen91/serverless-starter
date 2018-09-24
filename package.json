@@ -25,6 +25,6 @@
   },
   "dependencies": {
     "morgan": "^1.9.1",
-    "route-to": "0.0.0-alpha.9"
+    "route-to": "0.0.0-alpha.10"
   }
 }
