@@ -10,7 +10,7 @@ const echoBody = (req, res) => {
 
 module.exports = middleware(
   combineRoutes(
-    route.get("/", isActive),
+    route.get("/active", isActive),
     route.post("/", jsonParser, echoBody)
   )
 );

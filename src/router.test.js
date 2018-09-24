@@ -7,7 +7,7 @@ describe("Router", () => {
     const writeHead = jest.fn();
     const end = jest.fn();
     router(
-      { url: "/", method: "GET" },
+      { url: "/active", method: "GET" },
       { writeHead, end }
     );
     expect(writeHead).toBeCalledWith(200, {
