@@ -1,0 +1,10 @@
+service: ${file(./package.json):name}
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: ${opt:stage,'dev'}
+functions:
+  api:
+    handler: serverlessHandler.main
+    events:
+      - http: ANY {proxy+}

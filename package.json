@@ -1,0 +1,22 @@
+{
+  "name": "serverless-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/index.js",
+    "start:watch": "nodemon --legacy-watch src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "serverless": "^1.32.0"
+  },
+  "dependencies": {
+    "morgan": "^1.9.1",
+    "route-to": "0.0.0-alpha.8"
+  }
+}
