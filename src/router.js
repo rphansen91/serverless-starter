@@ -6,11 +6,11 @@ const isActive = (req, res) => {
 
 const echoBody = (req, res) => {
   res.json(req.body);
-}
+};
 
 module.exports = middleware(
   combineRoutes(
     route.get("/", isActive),
     route.post("/", jsonParser, echoBody)
   )
-)
+);

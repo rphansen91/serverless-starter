@@ -6,13 +6,21 @@
   "scripts": {
     "test": "jest",
     "start": "node src/index.js",
-    "start:watch": "nodemon --legacy-watch src/index.js"
+    "start:watch": "nodemon --legacy-watch src/index.js",
+    "lint": "./node_modules/.bin/eslint ."
   },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^5.6.0",
+    "jest": "^23.6.0",
     "nodemon": "^1.18.4",
+    "pre-commit": "^1.2.2",
     "serverless": "^1.32.0"
   },
   "dependencies": {
